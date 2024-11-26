@@ -1,0 +1,10 @@
+^D:\PROJECT\STARTUP\CLIENT_SIDE\ADMIN_PANAL_STARTUP\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/project/startup/client_side/admin_panal_startup/windows -BD:/project/startup/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/project/startup/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

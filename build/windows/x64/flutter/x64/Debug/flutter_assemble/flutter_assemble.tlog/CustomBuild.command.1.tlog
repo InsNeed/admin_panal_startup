@@ -1,0 +1,28 @@
+^D:\PROJECT\STARTUP\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\BDA5B80BA04165B993C5826719FFBA8E\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\Codeing\Flutter\SDK\flutter PROJECT_DIR=D:\project\startup\client_side\admin_panal_startup FLUTTER_ROOT=D:\Codeing\Flutter\SDK\flutter FLUTTER_EPHEMERAL_DIR=D:\project\startup\client_side\admin_panal_startup\windows\flutter\ephemeral PROJECT_DIR=D:\project\startup\client_side\admin_panal_startup FLUTTER_TARGET=D:\project\startup\client_side\admin_panal_startup\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\project\startup\client_side\admin_panal_startup\.dart_tool\package_config.json D:/Codeing/Flutter/SDK/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\STARTUP\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\F8C309B86172C19C1B23386BF2292E1D\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\STARTUP\CLIENT_SIDE\ADMIN_PANAL_STARTUP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/project/startup/client_side/admin_panal_startup/windows -BD:/project/startup/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/project/startup/client_side/admin_panal_startup/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

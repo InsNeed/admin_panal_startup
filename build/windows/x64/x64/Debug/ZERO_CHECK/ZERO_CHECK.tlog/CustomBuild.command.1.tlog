@@ -1,0 +1,10 @@
+^D:\PROJECT\STARTUP\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\EDC13FA6C33DFB1A4685C0FE7F0E0A07\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/project/startup/client_side/admin_panal_startup/windows -BD:/project/startup/client_side/admin_panal_startup/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/project/startup/client_side/admin_panal_startup/build/windows/x64/flutter_admin_portal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
